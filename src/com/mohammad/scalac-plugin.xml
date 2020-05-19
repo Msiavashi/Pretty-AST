@@ -1,0 +1,4 @@
+<plugin>
+  <name>ast-pretty-printer</name>
+  <classname>com.mohammad.ASTPrinter</classname>
+</plugin>
