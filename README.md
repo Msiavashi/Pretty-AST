@@ -30,6 +30,52 @@ object Test {
 
 __Output__
 ```text
+Nodes (without duplicate): 
+  PackageDef
+  Ident
+  <empty>
+  List
+  ClassDef
+  Modifiers
+  MODULE
+  Test
+  Template
+  Select
+  scala
+  TypeName
+  "AnyRef"
+  noSelfType
+  DefDef
+  termNames.CONSTRUCTOR
+  TypeTree
+  Block
+  Apply
+  Super
+  This
+  "Test"
+  typeNames.EMPTY
+  Literal
+  Constant
+  TermName
+  "main"
+  ValDef
+  PARAM
+  "args"
+  .setOriginal
+  AppliedTypeTree
+  scala.Array
+  "scala"
+  scala.Predef
+  "String"
+  EmptyTree
+  scala.Unit
+  "println"
+  "HelloWorld!"
+
+Number of nodes (without duplicate): 40
+
+Tree representaion: 
+
 PackageDef
 |-Ident
 | |-<empty>
