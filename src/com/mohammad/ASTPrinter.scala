@@ -37,11 +37,13 @@ class ASTPrinter(val global: Global) extends Plugin{
       def getASTNodes(input: String) {
         var nodes: Array[String] = Array[String] ()
         var tmpNode: String = ""
-        println("Nodes (without duplicate): ")
+        var counter: Int = 1;
+        println("Nodes (without duplicate): \n")
         input.foreach {
           case '(' | ')' | ',' => {
             if( (tmpNode != "") && !nodes.contains(tmpNode) ){
-              println("  " + tmpNode)
+              println(counter + "- " + tmpNode)
+              counter += 1
               nodes :+= tmpNode
             }
             tmpNode = "";
@@ -49,8 +51,6 @@ class ASTPrinter(val global: Global) extends Plugin{
           case ' ' =>
           case f => tmpNode += f 
         }
-        println()
-        println("Number of nodes (without duplicate): " + nodes.length)
       }
 
       def prettyPrint(input: String) = {
