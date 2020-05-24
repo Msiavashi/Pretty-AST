@@ -1,1 +1,5 @@
 .metals
+*.class
+node_modules
+*.js
+*.json
